@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #121212;  /* Dark background color for a professional vibe */
+    color: #E0E0E0;  /* Light grey color for text for contrast */
+    font-size: 16px;  /* Normal font size */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    font-size: 18px;  /* Normal font size */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #FFD700;  /* Vibrant yellow color for links */
+    text-decoration: none;
+    font-size: 1.2em;  /* Normal font size */
+}
+
+section {
+    padding: 4em 2em;
+    margin: 2em 0;
+    color: #FFD700;  /* Vibrant yellow color for text */
+    font-size: 1em;  /* Normal font size */
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5em;  /* Increased font size for headings */
+    margin-bottom: 1em;
+    color: #FF4500;  /* Vibrant orange-red color for headings */
+    font-weight: 700;  /* Bold font weight for headings */
+}
+
+.project, .testimonial {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    color: #87CEFA;  /* Light sky blue color for project and testimonial text */
+    font-size: 1em;  /* Normal font size */
+}
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    color: #ADFF2F;  /* Light green color for skills */
+    font-size: 1em;  /* Normal font size */
+}
+
+#skills ul li {
+    background-color: #333;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #FFD700;  /* Vibrant yellow color for contact form text */
+    font-size: 1em;  /* Normal font size */
+}
+
+#contact form input, #contact form textarea {
+    padding: 0.5em;
+    font-size: 1em;  /* Normal font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact form button {
+    padding: 0.7em;
+    font-size: 1.2em;  /* Normal font size */
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;  /* Normal font size */
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #FF4500;
+}
+
+.background-animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-gear {
+    fill: none;
+    stroke: #00BFFF;  /* Blue color for gears */
+    stroke-width: 3;
+    animation: draw 5s infinite linear, rotate 20s infinite linear;
+    filter: brightness(0.8) contrast(1.2) blur(2px);  /* Adjust brightness, contrast, and add blur */
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 100, 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

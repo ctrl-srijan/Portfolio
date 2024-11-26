@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            background-color: white;
+            color: red;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .gender {
+            display: flex;
+            align-items: center;
+        }
+        .gender label {
+            margin-right: 10px;
+        }
+        .gender input[type="radio"] {
+            margin-left: 10px;
+        }
+        .specialization {
+            display: flex;
+            align-items: center;
+        }
+        .specialization label {
+            margin-right: 10px;
+        }
+        .specialization-column {
+            display: block;
+            margin-left: 20px;
+        }
+        button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <h2>Student Registration Form</h2>
+    </div>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="it should contain @">
+        
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+        
+        <div class="gender">
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        
+        <label for="pin">Area PIN:</label>
+        <input type="text" id="pin" name="pin">
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+        
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification">
+            <option value="select">Select Qualification</option>
+            <!-- Add more options as needed -->
+        </select>
+        
+        <div class="specialization">
+            <label for="specialization">Specialization:</label>
+            <div class="specialization-column">
+                <input type="checkbox" id="cs" name="specialization" value="cs">
+                <label for="cs">Computer Science</label><br>
+                <input type="checkbox" id="it" name="specialization" value="it">
+                <label for="it">Information Technology</label><br>
+                <input type="checkbox" id="ca" name="specialization" value="ca">
+                <label for="ca">Computer Architecture</label><br>
+                <input type="checkbox" id="tc" name="specialization" value="tc">
+                <label for="tc">Tele Communication</label>
+            </div>
+        </div>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

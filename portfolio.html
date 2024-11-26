@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="background-animation-container">
+        <!-- Infinite self-drawing animation of complex blue gears in circle shape -->
+        <svg class="svg-gear" viewBox="0 0 100 100" id="gear1">
+            <circle cx="50" cy="50" r="45" />
+            <circle cx="50" cy="50" r="35" />
+            <circle cx="50" cy="50" r="25" />
+            <path d="M50 5 L55 20 L70 25 L55 30 L50 45 L45 30 L30 25 L45 20 Z" />
+        </svg>
+        <svg class="svg-gear" viewBox="0 0 100 100" id="gear2">
+            <circle cx="50" cy="50" r="40" />
+            <circle cx="50" cy="50" r="30" />
+            <circle cx="50" cy="50" r="20" />
+            <path d="M50 10 L55 25 L70 30 L55 35 L50 50 L45 35 L30 30 L45 25 Z" />
+        </svg>
+        <svg class="svg-gear" viewBox="0 0 100 100" id="gear3">
+            <circle cx="50" cy="50" r="35" />
+            <circle cx="50" cy="50" r="25" />
+            <circle cx="50" cy="50" r="15" />
+            <path d="M50 15 L55 30 L70 35 L55 40 L50 55 L45 40 L30 35 L45 30 Z" />
+        </svg>
+    </div>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio. Here you can learn more about me and my projects.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Fantastic work! Very professional and creative."</p>
+            <cite>- Happy Client</cite>
+        </blockquote>
+        <blockquote>
+            <p>"Exceeded all my expectations. Highly recommended!"</p>
+            <cite>- Satisfied Customer</cite>
+        </blockquote>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p>Feel free to reach out to me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+    <button id="back-to-top">Top</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
