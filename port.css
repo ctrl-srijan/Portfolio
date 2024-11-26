@@ -54,7 +54,15 @@ section h2 {
     color: #87CEFA;  /* Light sky blue color for project and testimonial text */
     font-size: 1em;  /* Normal font size */
 }
-
+.project:hover, .testimonial:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-weight: 700; 
+    text-decoration: none;
+        
+}
 #skills ul {
     display: flex;
     justify-content: center;
